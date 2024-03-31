@@ -1,0 +1,360 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+.main h1 {
+    background-image: url(icono.ico);
+    background-color: #fff;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin: 0;
+    color: #eceef1;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    position: fixed;
+    padding-left: 40px;
+    
+
+}
+header {
+    position: relative;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+
+}
+#imagen-principal {
+    position: relative;
+    
+
+}
+#imagen-principal img {
+    
+    display: flex;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.titulo {
+    position: absolute;
+    color: aquamarine;
+    font-size: 100px;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+         z-index: 1;
+}
+
+aside h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rosybrown;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 200px;
+    height: 100%;
+    width: 200px; 
+    background-color: #fff; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    overflow-y: auto;
+    z-index: 10;
+}
+.sidebar nav {
+    padding-top: 20px; 
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px; 
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #f0f0f0; 
+}
+.main {
+    text-align: right;;
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+.main ul a {
+    text-decoration: none;
+    margin: 10px;
+    top: 0px;
+    left: 0px;
+}
+.main ul a:hover {
+    padding: 5 px 10px;
+    color: #007BFF; 
+    font-weight: bold;
+    border-radius: 15px;
+}
+nav a {
+    text-decoration: none; 
+    color: #333; 
+    background-color: #D8E2DC;
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+.main ul li a {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main li {
+    display: inline;
+    margin-right: 15px;
+    
+}
+
+.contenido {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0;
+    background-color: #fff;
+}
+.texto-adicional {
+    display: none;
+}
+
+.texto-label {
+    font-weight: 800;
+    font-style: light;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.texto-label:before {
+    content: "Leer más";
+}
+
+.texto-checkbox:checked ~ #texto-adicional {
+    display: block;
+}
+
+.texto-checkbox:checked ~ .texto-label:before {
+    content: "Leer menos";
+}
+#descripcion {
+    justify-content: center;
+    background-color: #8eecf5;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#atractivos ul {
+    background-color: #d0f4de;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+#atractivos ul li {
+    border: 1px solid rgba(81, 70, 70, 0.63);
+    padding: 0px; 
+    position: relative;
+    border-bottom: 20px;
+}
+
+#atractivos ul li img {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+#atractivos ul li p {
+    opacity: 0; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+#atractivos ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#atractivos ul li:hover p {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    opacity: 1;
+}
+
+#itinerario {
+    font-family: Arial, sans-serif;
+    background-color: #fff1e6;
+}
+
+.dia {
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.detalle {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.dia:hover .detalle {
+    display: block;
+    opacity: 1;
+}
+.dia .detalle {
+    opacity: 0; 
+}
+
+.dia:not(:hover) .detalle {
+    transition-delay: 0.5s; 
+    opacity: 0; 
+}
+
+#itinerario h2 {
+    color: #333;
+}
+
+#itinerario p {
+    color: black;
+}
+
+#itinerario ul {
+    background-color: #e2eafc;
+    list-style-type: disc;
+    color: #888;
+    margin-left: 20px;
+}
+
+#itinerario li {
+    background-color: #e2eafc;
+    list-style-type: none;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+#costos {
+    font-family: Arial, sans-serif;
+    background-color: #8eecf5;
+}
+
+#costos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#costos ul li {
+    margin-bottom: 10px;
+}
+
+#costos ul li:nth-child(n+3) {
+    display: none;
+}
+
+#leer-mas {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#leer-mas:hover {
+    background-color: #0056b3;
+}
+
+#leer-mas:focus {
+    outline: none;
+}
+
+#leer-mas:checked ~ ul li:nth-child(n+3) {
+    display: list-item;
+}
+
+#leer-mas:checked + label::after {
+    content: 'Mostrar menos';
+}
+
+#leer-mas:not(:checked) + label::after {
+    content: 'Leer más';
+}
+
+#leer-mas:checked + label::before {
+    content: '\25B2';
+}
+
+#leer-mas:not(:checked) + label::before {
+    content: '\25BC';
+}
+
+#leer-mas + label {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #007BFF;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}

@@ -1,188 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Gran Cañón - Travel Partners</title>
     <link rel="icon" href="icono.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, main, footer {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        img.main-image {
-            width: 50%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        footer {
-                text-align: center;
-                padding-top: 30px;
-                background-color: #007BFF;
-                color: #fff;
-                position: relative;
-                bottom: 0;
-                width: 100%;
-            }
-    </style>
+    <link rel="stylesheet" href="styles2.css">
+
 </head>
+
 <body>
 
     <header>
-        <h1>Gran Cañón</h1>
-    </header>
-
-    <main>
+        <nav class="main">
+            <ul>
+                <h1>TRAVEL PARTNERS</h1>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="sanantero.html">SAN ANTERO</a></li>
+                <li><a href="machupicchu.html">MACHU PICCHU</a></li>
+                <li><a href="paris.html">PARIS</a></li>
+                <li><a href="Venecia.html">VENECIA</a></li>
+                <li><a href="Santorini.html">SANTORINI</a></li>
+            </ul>
+        </nav>
+        <h1 class="titulo">Gran Cañón</h1>
 
         <section id="imagen-principal">
-            <img class="main-image" 
-            src="https://www.disfrutalasvegas.com/f/estados-unidos/las-vegas/guia/gran-canon-m.jpg" 
-            alt="Gran Cañón">
+            <img class="main-image"
+                src="https://www.disfrutalasvegas.com/f/estados-unidos/las-vegas/guia/gran-canon-m.jpg"
+                alt="Gran Cañón">
         </section>
+    </header>
 
+    <main class="contenido">
+        <aside>
+            <nav class="sidebar">
+                <ul>
+                    <h2>Descripción</h2>
+                    <li>
+                        <a href="#descripcion">Descripcion</a>
+                    </li>
+                    <h2>Atractivos para visitar </h2>
+                    <li>
+                        <a href="#atractivos"> lugares</a>
+                    </li>
+                    <h2>Itinerario de 5 días y 4 noches</h2>
+                    <li><a href="#itinerario">Itinerario</a>
+                    </li>
+                    <h2>Costos del viaje</h2>
+                    <li><a href="#costos">Costos</a></li>
+                </ul>
+            </nav>
+        </aside>
         <section id="descripcion">
-            <p>
-                Descubre la grandiosidad del Gran Cañón, una maravilla natural tallada por la mano del tiempo y la fuerza del río Colorado. Este espectacular paisaje te sumergirá en la inmensidad de sus formaciones rocosas, sus colores cambiantes y sus imponentes cañones. Camina por los senderos que ofrecen vistas panorámicas y admira la magnificencia de uno de los lugares más emblemáticos del suroeste de los Estados Unidos.
-            </p>
-            <p>
-                Desde los majestuosos acantilados hasta los matices de colores al atardecer, el Gran Cañón es un destino que te dejará sin aliento. Experimenta la belleza de la naturaleza en su máxima expresión mientras exploras este sitio declarado Patrimonio de la Humanidad. Prepara tu espíritu aventurero para una experiencia única en uno de los lugares más asombrosos de la Tierra.
-            </p>
+            <h2>Descripción</h2>
+            <div class="container">
+                <p class="texto-original">
+                    Descubre la grandiosidad del Gran Cañón, una maravilla natural tallada por la mano del tiempo y la
+                    fuerza del río Colorado. Este espectacular paisaje te sumergirá en la inmensidad de sus formaciones
+                    rocosas, sus colores cambiantes y sus imponentes cañones. Camina por los senderos que ofrecen vistas
+                    panorámicas y admira la magnificencia de uno de los lugares más emblemáticos del suroeste de los
+                    Estados Unidos.
+                </p>
+                <input type="checkbox" id="texto-descripcion" class="texto-checkbox">
+                <label for="texto-descripcion" class="texto-label"></label>
+                <div id="texto-adicional" class="texto-adicional">
+                    <p>
+                        Desde los majestuosos acantilados hasta los matices de colores al atardecer, el Gran Cañón es un
+                        destino que te dejará sin aliento. Experimenta la belleza de la naturaleza en su máxima
+                        expresión
+                        mientras exploras este sitio declarado Patrimonio de la Humanidad. Prepara tu espíritu
+                        aventurero
+                        para una experiencia única en uno de los lugares más asombrosos de la Tierra.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="atractivos">
             <h2> Algunos atractivos para visitar</h2>
             <ul>
-                <li>
+                <li class="Atractivo1">
                     <p>
                         <strong>Margen Sur:</strong>
-                        Explora la Margen Sur para obtener vistas clásicas y accesibles del Gran Cañón. Disfruta de senderos panorámicos y la oportunidad de maravillarte con la inmensidad del cañón.
+                        Explora la Margen Sur para obtener vistas clásicas y accesibles del Gran Cañón. Disfruta de
+                        senderos panorámicos y la oportunidad de maravillarte con la inmensidad del cañón.
                     </p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Vista_R%C3%ADo_Negro_-_Bardas_margen_sur_-_Cipolletti.jpg" 
-                    alt="Atractivo 1"
-                    width="300"
-                    height="auto" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Vista_R%C3%ADo_Negro_-_Bardas_margen_sur_-_Cipolletti.jpg"
+                        alt="Atractivo 1" width="300" height="auto" />
 
                 </li>
-                <li>
-                <p>
-                    <strong>Parque Nacional del Gran Cañón:</strong>
-                    Sumérgete en la grandeza del parque y explora los diversos miradores a lo largo de la carretera del borde sur.
-                </p>
-                <img src="https://images.pexels.com/photos/14945926/pexels-photo-14945926.jpeg"
-                 alt="Atractivo 2"
-                 width="300"
-                 height="auto" />
-                </li>
-                <li>
-                <p>
-                    <strong>Río Colorado:</strong>
-                    Experimenta la grandiosidad desde una perspectiva única realizando una excursión en balsa por el río Colorado.
-                </p>
-                <img src="https://www.publicdomainpictures.net/pictures/230000/nahled/rafting.jpg"
-                 alt="Atractivo 3"
-                 width="300"
-                 height="auto" />
-                </li>
-                <li>
-                <p>
-                    <strong>Punto de Yavapai:</strong>
-                    Visita el Punto de Yavapai para obtener información geológica fascinante y vistas impresionantes.
-                    </p>
-                <img src="https://www.nps.gov/grca/planyourvisit/images/mather-point-2021.jpg"
-                alt="Atractivo 4"
-                width="300"
-                height="auto">
-
-                </li>
-                <li>
+                <li class="Atractivo2">
                     <p>
-                    <strong>Sendero Bright Angel:</strong>
-                    Embárcate en la aventura del Sendero Bright Angel para experimentar la profundidad del cañón de cerca.
+                        <strong>Parque Nacional del Gran Cañón:</strong>
+                        Sumérgete en la grandeza del parque y explora los diversos miradores a lo largo de la carretera
+                        del borde sur.
                     </p>
-                <img src="https://live.staticflickr.com/4102/4797086027_117f5a6757_b.jpg"
-                 alt="Atractivo 5"
-                 width="300"
-                 height="auto">
+                    <img src="https://images.pexels.com/photos/14945926/pexels-photo-14945926.jpeg" alt="Atractivo 2"
+                        width="300" height="auto" />
+                </li>
+                <li class="Atractivo3">
+                    <p>
+                        <strong>Río Colorado:</strong>
+                        Experimenta la grandiosidad desde una perspectiva única realizando una excursión en balsa por el
+                        río Colorado.
+                    </p>
+                    <img src="https://www.publicdomainpictures.net/pictures/230000/nahled/rafting.jpg" alt="Atractivo 3"
+                        width="300" height="auto" />
+                </li>
+                <li class="Atractivo4">
+                    <p>
+                        <strong>Punto de Yavapai:</strong>
+                        Visita el Punto de Yavapai para obtener información geológica fascinante y vistas
+                        impresionantes.
+                    </p>
+                    <img src="https://www.nps.gov/grca/planyourvisit/images/mather-point-2021.jpg" alt="Atractivo 4"
+                        width="300" height="auto">
 
-                </li>                    
+                </li>
+                <li class="Atractivo5">
+                    <p>
+                        <strong>Sendero Bright Angel:</strong>
+                        Embárcate en la aventura del Sendero Bright Angel para experimentar la profundidad del cañón de
+                        cerca.
+                    </p>
+                    <img src="https://live.staticflickr.com/4102/4797086027_117f5a6757_b.jpg" alt="Atractivo 5"
+                        width="300" height="auto">
+
+                </li>
             </ul>
         </section>
 
         <section id="itinerario">
             <h2>Itinerario de 5 días y 4 noches en el Gran Cañón:</h2>
-
-            <p><strong>Día 1: Llegada y Bienvenida al Gran Cañón</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Llegada al Gran Cañón y registro en el Hotel South Rim Lodge.</li>
-                <li>Descanso y adaptación al entorno.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Paseo introductorio por la Margen Sur.</li>
-                <li>Cena en el restaurante del hotel.</li>
-            </ul>
-
-            <p><strong>Día 2: Exploración de Vistas Panorámicas</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Desayuno en el hotel.</li>
-                <li>Recorrido por la carretera del borde sur y visita al Punto de Yavapai.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Almuerzo en el Gran Canyon Village.</li>
-                <li>Exploración de senderos cercanos.</li>
-            </ul>
-
-            <p><strong>Día 3: Aventura en el Río Colorado</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Desayuno temprano y traslado al punto de inicio de la excursión en balsa.</li>
-                <li>Excursión en balsa por el río Colorado.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Regreso al hotel y tiempo libre para relajarse.</li>
-                <li>Cena en el restaurante del hotel.</li>
-            </ul>
-
-            <p><strong>Día 4: Senderismo y Descubrimiento</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Desayuno en el hotel.</li>
-                <li>Senderismo por el Sendero Bright Angel.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Almuerzo tipo picnic en el cañón.</li>
-                <li>Exploración adicional de puntos de interés cercanos.</li>
-            </ul>
-
-            <p><strong>Día 5: Despedida y Últimas Vistas</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Desayuno en el hotel.</li>
-                <li>Visita final a miradores o senderos, según preferencias personales.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Almuerzo en el Gran Canyon Village.</li>
-                <li>Tiempo libre para compras y relajación antes de la partida.</li>
-                <li>Cena de despedida en el restaurante El Tovar.</li>
-            </ul>
+            <div class="dia">
+                <p><strong>Día 1: Llegada y Bienvenida al Gran Cañón</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Llegada al Gran Cañón y registro en el Hotel South Rim Lodge.</li>
+                        <li>Descanso y adaptación al entorno.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Paseo introductorio por la Margen Sur.</li>
+                        <li>Cena en el restaurante del hotel.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 2: Exploración de Vistas Panorámicas</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Desayuno en el hotel.</li>
+                        <li>Recorrido por la carretera del borde sur y visita al Punto de Yavapai.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Almuerzo en el Gran Canyon Village.</li>
+                        <li>Exploración de senderos cercanos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 3: Aventura en el Río Colorado</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Desayuno temprano y traslado al punto de inicio de la excursión en balsa.</li>
+                        <li>Excursión en balsa por el río Colorado.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Regreso al hotel y tiempo libre para relajarse.</li>
+                        <li>Cena en el restaurante del hotel.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 4: Senderismo y Descubrimiento</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Desayuno en el hotel.</li>
+                        <li>Senderismo por el Sendero Bright Angel.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Almuerzo tipo picnic en el cañón.</li>
+                        <li>Exploración adicional de puntos de interés cercanos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 5: Despedida y Últimas Vistas</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Desayuno en el hotel.</li>
+                        <li>Visita final a miradores o senderos, según preferencias personales.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Almuerzo en el Gran Canyon Village.</li>
+                        <li>Tiempo libre para compras y relajación antes de la partida.</li>
+                        <li>Cena de despedida en el restaurante El Tovar.</li>
+                    </ul>
+                </div>
+            </div>
 
         </section>
 
         <section id="costos">
-            <h2>Costos de Viaje (en dolares)</h2>
+            <h2>Costos de Viaje</h2>
+            <input type="checkbox" id="leer-mas">
+            <label for="leer-mas"></label>
             <ul>
                 <li>Noche en el Hotel South Rim Lodge: $250</li>
                 <li>Desayunos en el hotel : $15 cada uno</li>
@@ -197,8 +230,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Desarrollado por Noemí Alean Acuña - Correo Electrónico: noemi.alean@udea.edu.co - Todos los derechos reservados. </p>
+        <p>&copy; 2024 Desarrollado por Noemí Alean Acuña - Correo Electrónico: noemi.alean@udea.edu.co - Todos los
+            derechos reservados. </p>
     </footer>
 
 </body>
+
 </html>

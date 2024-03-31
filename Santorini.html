@@ -1,187 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Santorini - Travel Partners</title>
     <link rel="icon" href="icono.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, main, footer {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        img.main-image {
-            width: 50%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        footer {
-                text-align: center;
-                padding-top: 30px;
-                background-color: #007BFF;
-                color: #fff;
-                position: relative;
-                bottom: 0;
-                width: 100%;
-            }
-    </style>
+    <link rel="stylesheet" href="styles2.css">
 </head>
+
 <body>
 
     <header>
-        <h1>Santorini</h1>
-    </header>
+        <nav class="main">
+            <ul>
+                <h1>TRAVEL PARTNERS</h1>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="sanantero.html">SAN ANTERO</a></li>
+                <li><a href="machupicchu.html">MACHU PICCHU</a></li>
+                <li><a href="paris.html">PARIS</a></li>
+                <li><a href="elgrancañon.html">EL GRAN CAÑON</a></li>
+                <li><a href="Venecia.html">VENECIA</a></li>
 
-    <main>
+            </ul>
+        </nav>
+        <h1 class="titulo">Santorini</h1>
 
         <section id="imagen-principal">
-            <img class="main-image" 
-            src="https://miro.medium.com/v2/resize:fit:1400/1*S4SbI5_D6Tf4Z_W0IZo80A.jpeg" 
-            alt="Santorini">
+            <img class="main-image" src="https://miro.medium.com/v2/resize:fit:1400/1*S4SbI5_D6Tf4Z_W0IZo80A.jpeg"
+                alt="Santorini">
         </section>
+    </header>
 
+    <main class="contenido">
+        <aside>
+            <nav class="sidebar">
+                <ul>
+                    <h2>Descripción</h2>
+                    <li>
+                        <a href="#descripcion">Descripcion</a>
+                    </li>
+                    <h2>Atractivos para visitar </h2>
+                    <li>
+                        <a href="#atractivos"> lugares</a>
+                    </li>
+                    <h2>Itinerario de 5 días y 4 noches</h2>
+                    <li><a href="#itinerario">Itinerario</a>
+                    </li>
+                    <h2>Costos del viaje</h2>
+                    <li><a href="#costos">Costos</a></li>
+                </ul>
+            </nav>
+        </aside>
         <section id="descripcion">
-            <p>
-                Descubre la belleza hipnotizante de Santorini, una isla en el mar Egeo conocida por sus impresionantes vistas, arquitectura blanca brillante y atardeceres inolvidables. Esta joya del mar Egeo te invita a sumergirte en su encanto único, donde las casas encaladas contrastan con el azul intenso del mar y el cielo.
-            </p>
-            <p>
-                Explora los pintorescos pueblos de Oia, Fira y Akrotiri, donde cada callejón estrecho te lleva a una nueva sorpresa visual. Disfruta de la auténtica cocina griega en tabernas junto al mar, relájate en playas de arena volcánica y descubre la rica historia y cultura de esta isla encantadora. Santorini es el destino perfecto para quienes buscan una escapada romántica y una experiencia inolvidable en el mar Egeo.
-            </p>
+            <h2>Descripción</h2>
+            <div class="container">
+                <p class="texto-original">
+                    Descubre la belleza hipnotizante de Santorini, una isla en el mar Egeo conocida por sus
+                    impresionantes vistas, arquitectura blanca brillante y atardeceres inolvidables. Esta joya del mar
+                    Egeo te invita a sumergirte en su encanto único, donde las casas encaladas contrastan con el azul
+                    intenso del mar y el cielo.
+                </p>
+                <input type="checkbox" id="texto-descripcion" class="texto-checkbox">
+                <label for="texto-descripcion" class="texto-label"></label>
+                <div id="texto-adicional" class="texto-adicional">
+                    <p>
+                        Explora los pintorescos pueblos de Oia, Fira y Akrotiri, donde cada callejón estrecho te lleva a
+                        una
+                        nueva sorpresa visual. Disfruta de la auténtica cocina griega en tabernas junto al mar, relájate
+                        en
+                        playas de arena volcánica y descubre la rica historia y cultura de esta isla encantadora.
+                        Santorini
+                        es el destino perfecto para quienes buscan una escapada romántica y una experiencia inolvidable
+                        en
+                        el mar Egeo.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="atractivos">
             <h2> Algunos atractivos para visitar</h2>
             <ul>
-                <li>
+                <li class="Atractivo1">
                     <p>
                         <strong>Atardecer en Oia:</strong>
-                        Disfruta de uno de los atardeceres más famosos del mundo en Oia. Las vistas panorámicas y los tonos cálidos del sol poniente sobre el mar crean un escenario mágico.
+                        Disfruta de uno de los atardeceres más famosos del mundo en Oia. Las vistas panorámicas y los
+                        tonos cálidos del sol poniente sobre el mar crean un escenario mágico.
                     </p>
-                    <img src="https://live.staticflickr.com/5500/10969821484_dd403b4c76_b.jpg" 
-                    alt="Atractivo 1"
-                    width="300"
-                    height="auto" />
+                    <img src="https://live.staticflickr.com/5500/10969821484_dd403b4c76_b.jpg" alt="Atractivo 1"
+                        width="200" height="auto" />
 
                 </li>
-                <li>
-                <p>
-                    <strong>Playa de Kamari:</strong>
-                    Relájate en la playa de Kamari, con su distintiva arena negra volcánica. Disfruta del sol, el mar cristalino y las tabernas junto a la playa.
-                </p>
-                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/78/93.jpg"
-                 alt="Atractivo 2"
-                 width="300"
-                 height="auto" />
-                </li>
-                <li>
-                <p>
-                    <strong>Akrotiri y las Ruinas:</strong>
-                    Explora Akrotiri, un sitio arqueológico que muestra las ruinas de una ciudad minoica preservada por las cenizas volcánicas. Sumérgete en la historia antigua de Santorini.
-                </p>
-                <img src="https://www.worldhistory.org/uploads/images/746.jpg"
-                 alt="Atractivo 3"
-                 width="300"
-                 height="auto" />
-                </li>
-                <li>
-                <p>
-                    <strong>Recorrido por los Viñedos:</strong>
-                    Descubre los viñedos de Santorini y prueba los vinos locales. Disfruta de catas de vino con vistas a los característicos viñedos en espaldera.
-                </p>
-                <img src="https://www.astartesuites.gr/_res/img/424/g/79/santorini-winery-with-grape-vines.jpeg"
-                alt="Atractivo 4"
-                width="300"
-                height="auto">
-
-                </li>
-                <li>
+                <li class="Atractivo2">
                     <p>
-                    <strong>Museo Arqueológico de Thera:</strong>
-                    Explora el Museo Arqueológico de Thera en Fira, donde se exhiben artefactos y esculturas de la antigua Grecia encontrados en la isla.
+                        <strong>Playa de Kamari:</strong>
+                        Relájate en la playa de Kamari, con su distintiva arena negra volcánica. Disfruta del sol, el
+                        mar cristalino y las tabernas junto a la playa.
                     </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/0020MAN-Akrotiri_frescoes.jpg"
-                 alt="Atractivo 5"
-                 width="300"
-                 height="auto">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/78/93.jpg"
+                        alt="Atractivo 2" width="200" height="auto" />
+                </li>
+                <li class="Atractivo3">
+                    <p>
+                        <strong>Akrotiri y las Ruinas:</strong>
+                        Explora Akrotiri, un sitio arqueológico que muestra las ruinas de una ciudad minoica preservada
+                        por las cenizas volcánicas. Sumérgete en la historia antigua de Santorini.
+                    </p>
+                    <img src="https://www.worldhistory.org/uploads/images/746.jpg" alt="Atractivo 3" width="200"
+                        height="auto" />
+                </li>
+                <li class="Atractivo4">
+                    <p>
+                        <strong>Recorrido por los Viñedos:</strong>
+                        Descubre los viñedos de Santorini y prueba los vinos locales. Disfruta de catas de vino con
+                        vistas a los característicos viñedos en espaldera.
+                    </p>
+                    <img src="https://www.astartesuites.gr/_res/img/424/g/79/santorini-winery-with-grape-vines.jpeg"
+                        alt="Atractivo 4" width="200" height="auto">
 
-                </li>                    
+                </li>
+                <li class="Atractivo5">
+                    <p>
+                        <strong>Museo Arqueológico de Thera:</strong>
+                        Explora el Museo Arqueológico de Thera en Fira, donde se exhiben artefactos y esculturas de la
+                        antigua Grecia encontrados en la isla.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/0020MAN-Akrotiri_frescoes.jpg"
+                        alt="Atractivo 5" width="200" height="auto">
+
+                </li>
             </ul>
         </section>
 
         <section id="itinerario">
             <h2>Itinerario de 5 días y 4 noches en Santorini:</h2>
-
-            <p><strong>Día 1: Llegada y Bienvenida a Santorini</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Llegada a Santorini y registro en el hotel en Oia.</li>
-                <li>Descanso y adaptación al entorno.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Paseo por Oia y cena en un restaurante con vistas al mar.</li>
-            </ul>
-
-            <p><strong>Día 2: Exploración de Oia y Atardecer</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Desayuno en una cafetería local en Oia.</li>
-                <li>Visita a las tiendas y galerías de arte en Oia.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Tarde libre en la playa de Ammoudi.</li>
-                <li>Atardecer en el famoso punto de observación de Oia.</li>
-                <li>Cena en un restaurante de cocina griega.</li>
-            </ul>
-
-            <p><strong>Día 3: Akrotiri y Relax en la Playa</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Visita a las ruinas de Akrotiri por la mañana.</li>
-                <li>Almuerzo en una taberna local en Akrotiri.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Tarde de relax en la playa de Perissa.</li>
-                <li>Cena en una taberna junto al mar en Perissa.</li>
-            </ul>
-
-            <p><strong>Día 4: Viñedos y Cultura</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Recorrido por los viñedos de Santorini con degustación de vinos.</li>
-                <li>Almuerzo en un restaurante con vistas a los viñedos.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Visita al Museo Arqueológico de Thera en Fira.</li>
-                <li>Cena en una taberna tradicional en Fira.</li>
-            </ul>
-
-            <p><strong>Día 5: Despedida y Últimas Exploraciones</strong></p>
-            <p><em>Mañana:</em></p>
-            <ul>
-                <li>Desayuno en el hotel.</li>
-                <li>Compra de recuerdos en las tiendas locales.</li>
-            </ul>
-            <p><em>Tarde:</em></p>
-            <ul>
-                <li>Almuerzo en un café junto al mar.</li>
-                <li>Último paseo por las calles de Oia antes de la partida.</li>
-            </ul>
+            <div class="dia">
+                <p><strong>Día 1: Llegada y Bienvenida a Santorini</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Llegada a Santorini y registro en el hotel en Oia.</li>
+                        <li>Descanso y adaptación al entorno.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Paseo por Oia y cena en un restaurante con vistas al mar.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 2: Exploración de Oia y Atardecer</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Desayuno en una cafetería local en Oia.</li>
+                        <li>Visita a las tiendas y galerías de arte en Oia.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Tarde libre en la playa de Ammoudi.</li>
+                        <li>Atardecer en el famoso punto de observación de Oia.</li>
+                        <li>Cena en un restaurante de cocina griega.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 3: Akrotiri y Relax en la Playa</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Visita a las ruinas de Akrotiri por la mañana.</li>
+                        <li>Almuerzo en una taberna local en Akrotiri.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Tarde de relax en la playa de Perissa.</li>
+                        <li>Cena en una taberna junto al mar en Perissa.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 4: Viñedos y Cultura</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Recorrido por los viñedos de Santorini con degustación de vinos.</li>
+                        <li>Almuerzo en un restaurante con vistas a los viñedos.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Visita al Museo Arqueológico de Thera en Fira.</li>
+                        <li>Cena en una taberna tradicional en Fira.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dia">
+                <p><strong>Día 5: Despedida y Últimas Exploraciones</strong></p>
+                <div class="detalle">
+                    <p><em>Mañana:</em></p>
+                    <ul>
+                        <li>Desayuno en el hotel.</li>
+                        <li>Compra de recuerdos en las tiendas locales.</li>
+                    </ul>
+                    <p><em>Tarde:</em></p>
+                    <ul>
+                        <li>Almuerzo en un café junto al mar.</li>
+                        <li>Último paseo por las calles de Oia antes de la partida.</li>
+                    </ul>
+                </div>
+            </div>
 
         </section>
 
         <section id="costos">
-            <h2>Costos de Viaje (en dolares)</h2>
+            <h2>Costos de Viaje</h2>
+            <input type="checkbox" id="leer-mas">
+            <label for="leer-mas"></label>
             <ul>
                 <li>Noche en el Hotel: $200</li>
                 <li>Almuerzos en restaurantes locales : $40 cada uno</li>
@@ -198,8 +232,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Desarrollado por Noemí Alean Acuña - Correo Electrónico: noemi.alean@udea.edu.co - Todos los derechos reservados. </p>
+        <p>&copy; 2024 Desarrollado por Noemí Alean Acuña - Correo Electrónico: noemi.alean@udea.edu.co - Todos los
+            derechos reservados. </p>
     </footer>
 
 </body>
+
 </html>
